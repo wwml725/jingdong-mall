@@ -1,19 +1,26 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+
+    <router-view></router-view>
+    <Tab></Tab>
   </div>
 </template>
+<script>
+  import Tab from 'components/tab/tab'
 
-<style lang="stylus">
-#app
-  font-family 'Avenir', Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  margin-top 60px
+  export default {
+    components: {
+      Tab
+    }
+  }
+</script>
+<style lang="stylus" scoped>
+  @import "~common/stylus/variable.styl";
+  #app
+    color: $color-theme
+
+  .tab
+    position: fixed
+    bottom: 0
+    width: 100%
 </style>
