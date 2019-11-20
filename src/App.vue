@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-
     <router-view></router-view>
     <Tab></Tab>
   </div>
@@ -17,7 +16,13 @@
 <style lang="stylus" scoped>
   @import "~common/stylus/variable.styl";
   #app
-    color: $color-theme
+    color: blue
+
+    position:absolute
+    top:0
+    bottom:0
+    left:0
+    right:0
 
   .tab
     position: fixed

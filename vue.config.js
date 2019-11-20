@@ -12,5 +12,6 @@ module.exports = {
       .set('components', resolve('src/components'))
       .set('common', resolve('src/common'))
       .set('base', resolve('src/base'))
+      .set('api', resolve('src/api'))
   }
 }

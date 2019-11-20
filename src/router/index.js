@@ -5,6 +5,7 @@ import Classify from 'components/classify/classify.vue'
 import Vip from 'components/vip/vip.vue'
 import Cart from 'components/cart/cart.vue'
 import Profile from 'components/profile/profile.vue'
+import JdSupermarket from 'components/jd-supermarket/jd-supermarket.vue'
 
 console.log(Home)
 
@@ -39,7 +40,13 @@ const routes = [
     path: '/profile',
     name: 'profile',
     component: Profile
-  }
+  },
+   {
+    path: '/jd-supermarket',
+    name: 'jd-supermarket',
+    component: JdSupermarket
+  },
+
   // {
   //   // path: '/about',
   //   // name: 'about',

@@ -13,7 +13,7 @@
       <span class="tab-link">Vip</span>
     </router-link>
     <router-link tag="div" class="tab-item" to="/cart">
-      <i class="iconfont icon-cart2"></i>
+      <i class="iconfont icon-cart1"></i>
       <span class="tab-link">购物车</span>
     </router-link>
     <router-link tag="div" class="tab-item" to="/profile">
@@ -70,8 +70,10 @@
         /*color: #60666b*/
       &.router-link-active
           color: red
-          font-weight:bold
-          background:#cccccc
-        /*font-size :20px*/
+          /*background:#cccccc*/
+          .iconfont
+            font-weight :700
+          .tab-link
+            font-weight :700
 
 </style>
